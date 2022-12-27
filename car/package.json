@@ -1,12 +1,12 @@
 {
-  "name": "Dano's Detailing",
-  "homepage": "https://www.danosdetailing.com",
+  "name": "DanosDetailing",
+  "homepage": "https://julianjfouf.github.io/FernandoCarSite/",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
     "preview": "vite preview"
   },

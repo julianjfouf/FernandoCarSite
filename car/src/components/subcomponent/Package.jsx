@@ -4,12 +4,12 @@ const Package = ({ title, description, selected, id, setSelected, price }) => {
   return (
     <div
       onClick={() => setSelected(id)}
-      className={`border border-gray-200 shadow-md text-slate-400 p-8 relative rounded-lg flex flex-col gap-5 min-w-[400px] cursor-pointer hover:text-slate-500 duration-300 ${
+      className={`border border-gray-200 shadow-md text-slate-400 p-8 relative rounded-lg flex flex-col gap-5 md:min-w-[400px] cursor-pointer hover:text-slate-500 duration-300 ${
         selected ? `translate-y-[-12px] border-yellow-600 !shadow-xl` : null
       }`}
     >
       <h1
-        className={`text-4xl font-bold ${selected ? `!text-yellow-600` : null}`}
+        className={`md:text-4xl text-3xl font-bold ${selected ? `!text-yellow-600` : null}`}
       >
         {title}
 
@@ -21,7 +21,7 @@ const Package = ({ title, description, selected, id, setSelected, price }) => {
         </span>
       </h1>
       <ul
-        className={`list-disc text-xl ${selected ? `!text-amber-500` : null}`}
+        className={`list-disc md:text-xl ${selected ? `!text-amber-500` : null}`}
       >
         <span className="font-semibold ml-3">Package Includes:</span>
         {description.map((point, index) => (

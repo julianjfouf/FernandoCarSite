@@ -78,14 +78,14 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="container mx-auto bg-white w-full h-full flex justify-center flex-col items-center pb-24 pt-12 mt-[-48px]"
+      className="container mx-auto bg-white w-screen h-full flex justify-center flex-col items-center py-24 px-2"
     >
       <div className="services">
         <div class="container container__pricing">
           <div class="row services-row">
             <div class="pricing__text">
               <div class="section__subtitle pricing__subtitle">PRICING</div>
-              <div class="section__title pricing__title">
+              <div class="section__title pricing__title md:text-6xl text-4xl">
                 <span class="purple">Reasonable & Flexible Options</span>
               </div>
               <p class="section__description pricing__description">
@@ -93,11 +93,11 @@ const Services = () => {
               </p>
             </div>
             <div className="mt-16">
-              <div className="w-full flex justify-start items-center">
+              <div className="w-full flex md:justify-start justify-center items-center">
                 <div className="bg-yellow-600 rounded-full p-4 text-white text-xl h-16 w-16 flex justify-center items-center font-semibold">
                   1/3
                 </div>
-                <h1 className="text-4xl ml-4 text-yellow-600">
+                <h1 className="md:text-4xl text-2xl ml-4 text-yellow-600">
                   Select your package
                 </h1>
               </div>
@@ -157,12 +157,12 @@ const Services = () => {
                       <div className="bg-yellow-600 rounded-full p-4 text-white text-xl h-16 w-16 flex justify-center items-center font-semibold">
                         2/3
                       </div>
-                      <h1 className="text-4xl ml-4 text-yellow-600">
+                      <h1 className="md:text-4xl text-2xl ml-4 text-yellow-600">
                         Select any additional services
                       </h1>
                     </div>
                     <div className="flex flex-col justify-center items-center p-8 px-12 border border-gray-200 text-slate-600 rounded shadow-lg m-5 max-w-fit mx-auto">
-                      <h1 className="text-4xl mb-5 font-bold">
+                      <h1 className="md:text-4xl text-2xl mb-5 font-bold text-center">
                         Additional Services
                       </h1>
                       <div className="flex justify-center items-center gap-5 my-3 relative">
@@ -173,7 +173,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$15</span> Pet Hair Removal
+                          <span className="font-semibold">$15</span> Pet Hair
+                          Removal
                         </span>
                         <input
                           className=""
@@ -193,7 +194,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$20</span> Leather Seats Clean & Condition
+                          <span className="font-semibold">$20</span> Leather
+                          Seats Clean & Condition
                         </span>
                         <input
                           type="checkbox"
@@ -212,7 +214,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$15</span> Odor Eliminator
+                          <span className="font-semibold">$15</span> Odor
+                          Eliminator
                         </span>
                         <input
                           type="checkbox"
@@ -231,7 +234,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$50</span> Headlight Restoration
+                          <span className="font-semibold">$50</span> Headlight
+                          Restoration
                         </span>
                         <input
                           type="checkbox"
@@ -250,7 +254,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$35</span> Rim Ceramic Spray (3 mo. protection)
+                          <span className="font-semibold">$35</span> Rim Ceramic
+                          Spray (3 mo. protection)
                         </span>
                         <input
                           type="checkbox"
@@ -269,7 +274,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$20</span> Engine Bay Deep Clean
+                          <span className="font-semibold">$20</span> Engine Bay
+                          Deep Clean
                         </span>
                         <input
                           type="checkbox"
@@ -288,7 +294,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$45</span> Windshield Ceramic Coating
+                          <span className="font-semibold">$45</span> Windshield
+                          Ceramic Coating
                         </span>
                         <input
                           type="checkbox"
@@ -308,7 +315,7 @@ const Services = () => {
                       <div className="bg-yellow-600 rounded-full p-4 text-white text-xl h-16 w-16 flex justify-center items-center font-semibold">
                         2/3
                       </div>
-                      <h1 className="text-4xl ml-4 text-yellow-600">
+                      <h1 className="md:text-4xl text-2xl ml-4 text-yellow-600">
                         Select any additional services
                       </h1>
                     </div>
@@ -324,7 +331,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$50</span> Interior Fabric Coating
+                          <span className="font-semibold">$50</span> Interior
+                          Fabric Coating
                         </span>
                         <input
                           className=""
@@ -344,7 +352,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$60</span> Wheel Face Ceramic Coating
+                          <span className="font-semibold">$60</span> Wheel Face
+                          Ceramic Coating
                         </span>
                         <input
                           type="checkbox"
@@ -363,7 +372,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$75</span> Leather Seat Ceramic Coating
+                          <span className="font-semibold">$75</span> Leather
+                          Seat Ceramic Coating
                         </span>
                         <input
                           type="checkbox"
@@ -382,7 +392,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$35</span> Rim Ceramic Spray (3 mo. protection)
+                          <span className="font-semibold">$35</span> Rim Ceramic
+                          Spray (3 mo. protection)
                         </span>
                         <input
                           type="checkbox"
@@ -401,7 +412,8 @@ const Services = () => {
                               : null
                           } text-lg`}
                         >
-                          <span className="font-semibold">$45</span> Windshield Ceramic Coating
+                          <span className="font-semibold">$45</span> Windshield
+                          Ceramic Coating
                         </span>
                         <input
                           type="checkbox"
@@ -418,11 +430,11 @@ const Services = () => {
               </div>
               {selected ? (
                 <>
-                  <div className="w-full flex justify-start items-center">
-                    <div className="bg-yellow-600 rounded-full p-4 text-white text-xl h-16 w-16 flex justify-center items-center font-semibold">
+                  <div className="w-full flex md:justify-start justify-center items-center">
+                    <div className="bg-yellow-600 rounded-full p-4 text-white text-xl md:h-16 md:w-16 flex justify-center items-center font-semibold">
                       3/3
                     </div>
-                    <h1 className="text-4xl ml-4 text-yellow-600">
+                    <h1 className="md:text-4xl text-2xl ml-4 text-yellow-600">
                       Estimate booking summary
                     </h1>
                   </div>
@@ -433,7 +445,7 @@ const Services = () => {
                     >
                       Estimate
                     </button>
-                    <div className="flex justify-center items-center gap-20">
+                    <div className="flex justify-center items-center md:gap-20 md:flex-row flex-col">
                       <p className="text-3xl text-center leading-relaxed">
                         <span className="font-semibold">Estimated Cost: </span>
                         <br />${totalCost}

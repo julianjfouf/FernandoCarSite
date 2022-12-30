@@ -2,16 +2,6 @@ import React from "react";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 const About = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add(" showw");
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll(".hidee");
-  hiddenElements.forEach((el) => observer.observe(el));
   return (
     <div
       id="about"
@@ -19,13 +9,13 @@ const About = () => {
     >
       <p className="section__subtitle">BACKGROUND</p>
       <h1 className="text-6xl font-bold text-gray-900 mb-2">About Us</h1>
-      <div className="flex gap-8 bg-black text-white p-8 items-center my-24 rounded shadow-lg">
+      <div className="flex justify-center flex-col md:!flex-row mx-auto md:!gap-8 gap-2 bg-black text-white md:!p-8 p-4 pt-8 items-center md:!my-24 my-12 rounded shadow-lg">
         <img
-          className="max-h-[480px] rounded shadow-lg border-1 border border-slate-500"
+          className="md:!max-w-[120px] max-w-[80px] rounded shadow-lg border-1 border border-slate-500"
           src="https://cdn.discordapp.com/attachments/699485073509974056/1056154600014610474/About_me_pic.png"
           alt=""
         />
-        <p className="max-w-[400px] text-xl p-8 leading-[48px]">
+        <p className="max-w-[400px] md:!text-xl md:!p-8 p-4 md:!leading-[48px] leading-[28px]">
           At 17 years old, Fernando Zepeda founded Dano's Detailing as a way to
           raise money for college expenses. Offering
           <span className="text-yellow-500 font-semibold">

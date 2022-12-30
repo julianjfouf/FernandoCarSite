@@ -14,6 +14,10 @@
   scroll-behavior: smooth;
 }
 
+.hero {
+  height: calc(100vh - 99.25px);
+}
+
 .link {
   position: relative;
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { FaAngleDown, FaCaretDown } from "react-icons/fa";
 
-const Hero = () => {
+const Hero = ({ setMenu, menu }) => {
   return (
-    <div className="hero h-screen overflow-hidden w-screen flex justify-center flex-col items-center">
+    <div className="hero overflow-y-hidden md:p-0 p-4 w-screen flex justify-center flex-col items-center">
       <div className="bg-black absolute top-0 left-0 w-screen h-full z-[-1] opacity-[0.75]"></div>
       <img
         style={{ objectFit: "cover" }}
@@ -28,8 +28,8 @@ const Hero = () => {
           fontSize: "108px",
           zIndex: "10",
           color: "white",
-          letterSpacing: "0px",
         }}
+        className="md:text-inherit text-center leading-[121px] md:leading-normal"
       >
         DANO'S DETAILING
       </span>
@@ -40,6 +40,39 @@ const Hero = () => {
       >
         Book
       </a>
+      {menu ? (
+        <div className="absolute h-screen w-screen bg-black z-[100] top-0">
+          <ul className="flex flex-col items-center justify-center z-[100] h-full gap-32 text-xl">
+            <li className="link text-yellow-300 before:bg-yellow-300 z-[100]">
+              <a
+                href="#services"
+                onClick={() => setMenu(false)}
+                className=" z-[100]"
+              >
+                Services
+              </a>
+            </li>
+            <li className="link text-yellow-300 before:bg-yellow-300 z-[100]">
+              <a
+                href="#about"
+                onClick={() => setMenu(false)}
+                className=" z-[100]"
+              >
+                About
+              </a>
+            </li>
+            <li className="link text-yellow-300 before:bg-yellow-300 z-[100]">
+              <a
+                href="#book"
+                onClick={() => setMenu(false)}
+                className=" z-[100]"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      ) : null}
       <div className="absolute bottom-5 text-white animate-bounce">
         <FaAngleDown className="scale-[2] text-yellow-300" />
       </div>

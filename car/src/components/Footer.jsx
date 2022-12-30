@@ -5,7 +5,7 @@ import Logo from "../assets/fernando logo.jpg";
 const Footer = () => {
   return (
     <div className="bg-black w-screen h-full overflow-hidden">
-      <div className="container mx-auto flex flex-col justify-center items-center text-white py-48">
+      <div className="container mx-auto flex flex-col justify-center items-center text-white py-24">
         <a href="#home" className="relative group cursor-pointer">
           <img src={Logo} className="w-60" alt="" />
           <p className="absolute flex text-yellow-300 items-baseline top-[50%] opacity-0 left-[50%] group-hover:left-[100%] group-hover:opacity-100 transition-all duration-300">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "../components/About";
 import Book from "../components/Book";
 import Footer from "../components/Footer";
@@ -7,14 +7,19 @@ import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 
 const Home = () => {
+  const [menu, setMenu] = useState(false);
   return (
     <div className="">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Book />
-      <About />
-      <Footer />
+      <Navbar setMenu={setMenu} menu={menu} />
+      <Hero setMenu={setMenu} menu={menu} />
+      {menu ? null : (
+        <>
+          <Services />
+          <Book />
+          <About />
+          <Footer />
+        </>
+      )}
     </div>
   );
 };

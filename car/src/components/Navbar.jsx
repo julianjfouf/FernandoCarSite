@@ -1,17 +1,28 @@
-import React from "react";
-import { FaCar, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import React, { useState } from "react";
+import {
+  FaBars,
+  FaCar,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaTimes,
+} from "react-icons/fa";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import Logo from "../assets/fernando logo.jpg";
 
-const Navbar = () => {
+const Navbar = ({ setMenu, menu }) => {
   return (
     <div
       id="home"
-      className="z-10 bg-transparent flex justify-between items-center text-white navigation py-2"
+      className="z-[200] bg-transparent flex justify-between items-center text-white navigation py-2"
     >
-      <div className="z-10 container flex w-screen justify-between items-center mx-auto duration-300">
-        <img src={Logo} className="w-32 mt-5" alt="" />
-        <ol className="flex text-yellow-300 uppercase tracking-widest pr-20">
+      <div className="z-[200] container flex w-screen justify-between items-center mx-auto duration-300 px-5">
+        <img
+          src={Logo}
+          className={`w-32 mt-5 ${menu ? `opacity-0` : null}`}
+          alt=""
+        />
+        <ol className="hidden text-yellow-300 uppercase tracking-widest pr-20 md:!show md:!flex">
           <li className="mr-4 link before:bg-yellow-300">
             <a href="#services">Services</a>
           </li>
@@ -22,7 +33,7 @@ const Navbar = () => {
             <a href="#book">Contact</a>
           </li>
         </ol>
-        <ol className="flex">
+        <ol className={`flex ${menu ? `opacity-0` : null}`}>
           <li className="mr-2">
             <a
               target="_blank"
@@ -43,6 +54,13 @@ const Navbar = () => {
             </a>
           </li>
         </ol>
+        <div className="show md:hidden z-[200]">
+          {menu ? (
+            <FaTimes className="z-[200]" onClick={() => setMenu(false)} />
+          ) : (
+            <FaBars className="z-[200]" onClick={() => setMenu(true)} />
+          )}
+        </div>
       </div>
     </div>
   );

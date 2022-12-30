@@ -22,13 +22,13 @@ const Book = () => {
       className="flex flex-col justify-center h-screen items-center bg-black text-white"
     >
       <p className="section__subtitle">BOOKING</p>
-      <h1 className="text-6xl font-bold mb-2 lg:text-center">
+      <h1 className="md:text-6xl text-4xl font-bold mb-2 text-center">
         Book an Appointment!
       </h1>
       <p className="text-[#718096] font-semibold text-[18px] my-5">
         We'd love to work with you!
       </p>
-      <div className="bg-white p-16 rounded-lg mt-10">
+      <div className="bg-white md:p-16 p-4 rounded-lg mt-10">
         <div className="p-2">
           <span className="leading-3 tracking-widest font-semibold text-yellow-600">
             EMAIL
@@ -41,7 +41,7 @@ const Book = () => {
           <span className="leading-3 tracking-widest font-semibold text-yellow-600">
             SOCIAL MEDIA
           </span>
-          <p className="mb-4 flex items-center justify-center gap-5 text-gray-700">
+          <p className="mb-4 flex md:!flex-row flex-col items-center justify-center gap-5 text-gray-700">
             <div className="flex items-center">
               <a
                 target="_blank"

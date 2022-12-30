@@ -8,7 +8,9 @@ const About = () => {
       className="py-20 flex flex-col justify-center items-center container mx-auto"
     >
       <p className="section__subtitle">BACKGROUND</p>
-      <h1 className="text-6xl font-bold text-gray-900 mb-2">About Us</h1>
+      <h1 className="md:text-6xl text-4xl font-bold text-gray-900 mb-2">
+        About Us
+      </h1>
       <div className="flex justify-center flex-col md:!flex-row mx-auto md:!gap-8 gap-2 bg-black text-white md:!p-8 p-4 pt-8 items-center md:!my-24 my-12 rounded shadow-lg">
         <img
           className="md:!max-w-[120px] max-w-[80px] rounded shadow-lg border-1 border border-slate-500"
